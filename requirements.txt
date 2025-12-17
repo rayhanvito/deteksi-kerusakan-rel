@@ -7,7 +7,7 @@ gitpython>=3.1.30
 matplotlib>=3.3
 numpy>=1.23.5
 opencv-python>=4.1.1
-Pillow==10.3.0  # Pinned to this version to avoid conflict with streamlit
+Pillow>=10.4.0  # Use version 10.4.0 or newer for Python 3.13+ compatibility
 psutil
 PyYAML>=5.3.1
 requests>=2.32.2
