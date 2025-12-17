@@ -158,7 +158,7 @@ def load_yolov5_model(model_path='best.pt'):
     try:
         if not os.path.exists(model_path):
             return None, False, f"File model '{model_path}' tidak ditemukan!"
-        model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
+        model = torch.hub.load('./yolov5', 'custom', path=model_path, source='local')
         model.conf = 0.25
         model.iou = 0.45
         return model, True, "Model berhasil dimuat!"
